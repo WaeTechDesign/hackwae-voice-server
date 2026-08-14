@@ -1,0 +1,67 @@
+[project]
+name = "hackwae-voice-server"
+version = "0.1.0"
+description = "Modular local AI Voice Server with REST API, WebUI, Docker, and CasaOS support."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.14"
+
+authors = [
+    { name = "HackWae", email = "hackwae3@gmail.com" }
+]
+
+keywords = [
+    "tts",
+    "stt",
+    "voice",
+    "speech",
+    "ai",
+    "fastapi",
+    "docker",
+    "casaos",
+    "ollama",
+    "voice-cloning"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: POSIX :: Linux",
+    "License :: OSI Approved :: MIT License",
+]
+
+dependencies = [
+    "fastapi>=0.141.1",
+    "uvicorn>=0.52.1",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.2",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+    "loguru>=0.7.3",
+    "psutil>=7.2.2",
+    "torch==2.6.0",
+    "torchaudio==2.6.0",
+    "transformers==5.2.0",
+    "diffusers==0.29.0",
+    "huggingface-hub==1.26.0",
+    "safetensors==0.5.3",
+    "librosa==0.11.0",
+    "soundfile==0.14.0",
+    "omegaconf==2.3.1",
+    "pykakasi==2.3.0",
+    "spacy-pkuseg",
+    "pyloudnorm",
+    "conformer==0.3.2",
+    "gradio==6.8.0",
+    "resemble-perth @ git+https://github.com/resemble-ai/Perth.git@master",
+    "chatterbox-tts==0.1.7"
+]
+
+[project.urls]
+Homepage = "https://github.com/HackWae/hackwae-voice-server"
+Repository = "https://github.com/HackWae/hackwae-voice-server"
+Issues = "https://github.com/HackWae/hackwae-voice-server/issues"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"

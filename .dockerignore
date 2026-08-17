@@ -1,27 +1,38 @@
 .git
 .gitignore
 
-__pycache__/
-*.pyc
-*.pyo
-
 .venv/
+__pycache__/
+*.py[cod]
 
 tests/
-
 docs/
 
+.env
+
 storage/
-
-logs/
-
-cache/
-
 uploads/
-
 output/
+cache/
+logs/
 
 *.wav
 *.mp3
+*.flac
+*.ogg
 
-.env
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+*.onnx
+
+*.zip
+*.tar
+*.tar.gz
+
+.vscode/
+.idea/
+
+*.save
